@@ -1,11 +1,13 @@
 #pragma once
 
-class Engine {
-    public:
-        Engine();
-        ~Engine();
+#include "../window/Window.h"
 
-        void run();
-    private:
-        bool running;
+class Engine {
+public:
+    Engine();
+    ~Engine();
+    void run();
+
+private:
+    Window window;
 };
