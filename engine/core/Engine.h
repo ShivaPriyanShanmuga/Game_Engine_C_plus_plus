@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../window/Window.h"
+#include "../rendering/Renderer.h"
 
 class Engine {
 public:
@@ -10,4 +11,5 @@ public:
 
 private:
     Window window;
+    Renderer* renderer;
 };
